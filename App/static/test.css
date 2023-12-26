@@ -1,0 +1,21 @@
+/* Your existing CSS styles */
+/* ... */
+
+.dashboard-container {
+    position: fixed;
+    top: 100;
+    left: 100;
+    width: 1900px; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    background-color: #fff; /* Set background color */
+    padding: 10px; /* Add padding for content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    z-index: 100; /* Set z-index to ensure it's above other content */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Additional styles for dashboard content within .dashboard-container */
+/* ... */
+.dashboard-container canvas {
+    height: 100px; /* Set a fixed height for the chart canvas */
+}
