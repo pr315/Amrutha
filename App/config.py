@@ -1,6 +1,7 @@
 import sqlite3
 from boxsdk import OAuth2, Client
 
+
 def database_connection():
     conn = sqlite3.connect('credentials.db')
     return conn
