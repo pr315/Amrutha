@@ -8,7 +8,7 @@ def database_connection():
 def get_credentials():
     conn = database_connection()
     cursor = conn.cursor()
-    cursor.execute('SELECT client_id, access_token FROM credentials ORDER BY id DESC LIMIT 1')
+    cursor.execute('SELECT client_id, access_token FROM boxcredentials ORDER BY id DESC LIMIT 1')
     result = cursor.fetchone()
     conn.close()
     return result 

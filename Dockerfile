@@ -4,7 +4,6 @@ COPY ./App/ ./app
 
 RUN pip3 install -r ./app/requirements.txt
 
-EXPOSE 8080
+EXPOSE 80
 ENV FLASK_APP=./app/app.py
-CMD ["flask", "run", "--host", "prajvalwebapp.eu-west-1.elasticbeanstalk.com"]
-
+ENTRYPOINT ["flask", "run", "--host", "0.0.0.0"]

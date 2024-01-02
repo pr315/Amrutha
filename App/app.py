@@ -161,4 +161,4 @@ def logout():
 
 if __name__ == '__main__':
     # app.run(host='sec-isc-infra-jenkins.swg-devops.com',debug=True)
-    app.run(host='prajvalwebapp.eu-west-1.elasticbeanstalk.com',debug=True)
+    app.run(host='0.0.0.0',port=80,debug=True)
